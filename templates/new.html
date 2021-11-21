@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
+   <title>Novo Comentário</title>
+</head>
+<body>
+
+   <section id="new">
+      <a href="/">
+         <img src=" {{ url_for('static', filename='img/logo-novo.png') }} " alt="">
+      </a>
+
+      <div id="card">
+         <h4>Novo Comentário</h4>
+
+         <form action="/new" method="POST">
+            <div class="label-float">
+               <input type="text" id="nome" name="nome" placeholder=" " required >
+               <label for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="artista" name="artista" placeholder=" " required >
+               <label for="artista">Empresa</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="link" name="link" placeholder=" " required >
+               <label for="link">Comentário</label>
+            </div>
+
+            <div class="justify-center">
+               <button type="submit">Cadastrar</button>
+            </div>
+         </form>
+      </div>
+   </section>
+
+</body>
+</html>

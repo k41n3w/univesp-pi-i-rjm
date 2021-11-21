@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 header#banner {
   background-color: #FFF;
-  padding: 80px;
+  padding-top: 80px;
   display: flex;
   align-items: center;
   min-height: 30rem;

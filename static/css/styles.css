@@ -58,7 +58,19 @@ header#banner {
   min-height: 30rem;
 }
 
+header#services {
+  background-color: #FFF;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  min-height: 30rem;
+}
 
+header#services div h1 {
+  font-size: 2.5rem;
+  color: #000;
+  text-shadow: 2px 2px 5px #00000050;
+}
 
 header#banner div h1 {
   font-size: 2.5rem;
@@ -344,3 +356,19 @@ section.modal div#card div#btns a.btn-apagar:hover{
 
 
 /* Fim dos estilos do modal */
+
+h3 {
+  text-align: center;
+  color: #000;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #B1CE0B;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+li {
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-transform: unset;
+}

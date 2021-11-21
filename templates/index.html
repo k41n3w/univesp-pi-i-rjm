@@ -19,19 +19,16 @@
 
       <ul>
          <li>
-            <a href="">Inicio</a>
+            <a href="#service">Serviços</a>
          </li>
          <li>
-            <a href="">Empresa</a>
+            <a href="#links">Links Úteis</a>
          </li>
          <li>
-            <a href="">Serviço</a>
+            <a href="#about">Sobre</a>
          </li>
          <li>
-            <a href="">Utilidades</a>
-         </li>
-         <li>
-            <a href="">Contato</a>
+            <a href="#contact">Contato</a>
          </li>
       </ul>
    </nav>
@@ -48,68 +45,140 @@
 
    </header>
 
-   <section id="playlist">
+   <header id="services">
+    <div id="service">
+      <h3>
+        Serviços
+      </h3>
 
-      <h3>Comentarios dos clientes</h3>
+      <br>
+      <br>
+      <br>
 
-      <table>
+      <ul>
+        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
+        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
+        <li>Rotina fiscal completa</li>
+        <li>Abertura e fechamento de empresas</li>
+        <li>Atendimento a microempreendedor individual - MEI</li>
+        <li>Execução da rotina do departamento de pessoal desde o registro de funcionário à folha de pagamentos incluindo guia de impostos</li>
+        <li>Escrituração contábil</li>
+        <li>Declaração de imposto de renda</li>
+        <li>Suporte técnico aos departamentos da empresa com visitas sob demanda, com elabroração de relátórios para a comunicação de sugestões ou divergências</li>
+      </ul>
+  </div>
+ </header>
 
-         <thead>
-            <tr>
-               <th>#</th>
-               <th>Cliente</th>
-               <th>Empresa</th>
-               <th>Comentario</th>
-               <th>Ações</th>
-            </tr>
-         </thead>
+  <header id="banner">
+    <div id="links">
+      <h3>
+        Links Úteis
+      </h3>
 
-         <tbody>
-            {% for m in musicas %}
-            <tr>
-               <td>{{m.id}}</td>
-               <td>{{m.nome}}</td>
-               <td>{{m.artista}}</td>
-               <!-- TODO: Moldar model para compreender regra de negócio, ou seja -->
-               <!-- Trocar model música por Comentários, mudar link da música para -->
-               <!-- comentário, possível alterações? -->
-               <td>{{m.nome}}</td>
-            </td>
-               <td>
-                  <a href="/edit/{{m.id}}">Editar</a>
-                  <a href="/{{m.id}}">Apagar</a>
-               </td>
-            </tr>
-            {% endfor %}
-         </tbody>
+      <br>
+      <br>
+      <br>
 
-      </table>
+      <ul>
+        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
+        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
+      </ul>
+    </div>
+  </header>
 
-   </section>
+  <header id="services">
+    <div id="about">
+      <h3>
+        Sobre
+      </h3>
 
-   {% if musica != undefined %}
-   <section class="modal">
-      <div id="card">
+      <br>
+      <br>
+      <br>
 
-         <a href="/#playlist" id="fechar"><i class="fa fa-times" aria-hidden="true"></i></a>
-         <h2>Confirmação</h2>
-         <hr>
+      <ul>
+        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
+        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
+      </ul>
+    </div>
+  </header>
 
-         <p>Deseja realmente apagar a comentário {{musica.nome}} ???</p>
-         <div id="btns">
-            <a class="btn-cancelar" href="/#playlist">Cancelar</a>
-            <a class="btn-apagar" href="/delete/{{musica.id}}">Apagar</a>
-         </div>
-      </div>
-   </section>
-   {% endif %}
+  <header id="banner">
+    <div id="contact">
+      <h3>
+        Contato
+      </h3>
 
-   <footer>
-      <hr>
-      <p>Todos os direitos reservados:
-         <a target="_blank" href="">Trabalho do PI</a> &copy;
-      </p>
-   </footer>
+      <br>
+      <br>
+      <br>
+
+      <ul>
+        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
+        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="playlist">
+    <h3>Comentarios dos clientes</h3>
+    <table>
+        <thead>
+          <tr>
+              <th>#</th>
+              <th>Cliente</th>
+              <th>Empresa</th>
+              <th>Comentario</th>
+              <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for m in musicas %}
+          <tr>
+              <td>{{m.id}}</td>
+              <td>{{m.nome}}</td>
+              <td>{{m.artista}}</td>
+              <!-- TODO: Moldar model para compreender regra de negócio, ou seja -->
+              <!-- Trocar model música por Comentários, mudar link da música para -->
+              <!-- comentário, possível alterações? -->
+              <td>{{m.nome}}</td>
+          </td>
+              <td>
+                <a href="/edit/{{m.id}}">Editar</a>
+                <a href="/{{m.id}}">Apagar</a>
+              </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+
+    </table>
+
+  </section>
+
+  <!-- {% if musica != undefined %}
+  <section class="modal">
+    <div id="card">
+
+        <a href="/#playlist" id="fechar"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <h2>Confirmação</h2>
+        <hr>
+
+        <p>Deseja realmente apagar a comentário {{musica.nome}} ???</p>
+        <div id="btns">
+          <a class="btn-cancelar" href="/#playlist">Cancelar</a>
+          <a class="btn-apagar" href="/delete/{{musica.id}}">Apagar</a>
+        </div>
+    </div>
+  </section>
+  {% endif %} -->
+
+  <footer>
+    <hr>
+    <p>Todos os direitos reservados:
+        <a target="_blank" href="">Trabalho do PI</a> &copy;
+    </p>
+  </footer>
 
 </body>
 

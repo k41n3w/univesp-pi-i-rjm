@@ -14,7 +14,7 @@
 
    <nav>
       <a href="/">
-         <img src=" {{ url_for('static', filename='img/logo-novo.png') }} " alt="">
+         <img src=" {{ url_for('static', filename='img/logo.png') }} " alt="">
       </a>
 
       <ul>
@@ -41,13 +41,13 @@
          </h1>
       </div>
 
-      <img src="{{url_for('static', filename='img/contador.png')}}" alt="">
+      <img src="{{url_for('static', filename='img/front-model.png')}}" alt="">
 
    </header>
 
    <header id="services">
     <div id="service">
-      <h3>
+      <h3 style="color: #FFF;">
         Serviços
       </h3>
 
@@ -55,7 +55,7 @@
       <br>
       <br>
 
-      <ul>
+      <ul style="color: #FFF;">
         <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
         <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
         <li>Rotina fiscal completa</li>
@@ -69,37 +69,49 @@
   </div>
  </header>
 
-  <header id="banner">
+  <header id="utils">
     <div id="links">
-      <h3>
+      <h3 >
         Links Úteis
       </h3>
       <div class="parent--utils">
         <section class="utils">
-          Logo 1
-         </section>
-         <section class="utils">
-          Logo 2
-         </section>
-         <section class="utils">
-          Logo 3
-         </section>
-         <section class="utils">
-          Logo 4
-         </section>
-         <section class="utils">
-          Logo 5
-         </section>
-         <section class="utils">
-          Logo 6
-         </section>
-       </div>
+          <a href="https://www.gov.br/receitafederal/pt-br">
+            <img src="{{url_for('static', filename='img/ReceitaFederal_150.png')}}" alt="">
+          </a>
+          </section>
+          <section class="utils">
+            <a href="https://servicos.receita.fazenda.gov.br/Servicos/certidaointernet/PJ/Emitir">
+              <img src="{{url_for('static', filename='img/Cnegativa.png')}}" alt="">
+            </a>
+          </section>
+          <section class="utils">
+            <a href="https://servicos.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp">
+              <img src="{{url_for('static', filename='img/CNPJ.png')}}" alt="">
+            </a>
+          </section>
+          <section class="utils">
+            <a href="https://servicos.receita.fazenda.gov.br/servicos/cpf/consultasituacao/consultapublica.asp">
+              <img src="{{url_for('static', filename='img/CPF.png')}}" alt="">
+            </a>
+          </section>
+          <section class="utils">
+            <a href="https://www.saogoncalo.rj.gov.br/">
+              <img src="{{url_for('static', filename='img/Prefeitura_150.png')}}" alt="">
+            </a>
+          </section>
+          <section class="utils">
+            <a href="https://www4.fazenda.rj.gov.br/certidao-fiscal-web/emitirCertidao.jsf">
+              <img src="{{url_for('static', filename='img/RecEstadSefaz_150.png')}}" alt="">
+            </a>
+          </section>
+        </div>
     </div>
   </header>
 
-  <header id="services">
+  <header id="about">
     <div id="about">
-      <h3>
+      <h3 style="color: #FFF;">
         Sobre
       </h3>
 
@@ -107,31 +119,20 @@
       <br>
       <br>
 
-      <ul>
-        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
-        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
-      </ul>
+      <h2>Nossa Missão</h2><br><br>
+      Fornecer serviços de qualidade em tempo curto para que o empressário tenha confiança ao tomar decisões.
+      <br><br><br>
+      <h2>Visão Empresarial</h2><br><br>
+      Sermos reconhecidos pela apresentação de soluções contábeis e pela agilidade nas respostas as demandas de nossos clientes.
+      <br><br><br>
+      <h2>Valores</h2><br><br>
+      Ética profissional, busca contínua pela qualidade, trabalho em equipe, transparência, dinamismo e parceria com nossos clientes e a comunidade.
     </div>
   </header>
 
-  <header id="banner">
-    <div id="contact">
-      <h3>
-        Contato
-      </h3>
-
-      <br>
-      <br>
-      <br>
-
-      <ul>
-        <li>Atuamos no mercado dando suporte aos nossos clientes quanto a constituição, administração e consultorias da área</li>
-        <li>Serviços de rotina contábil conforme as normas contábeis e legislação em vigor</li>
-      </ul>
-    </div>
-  </header>
 
   <section id="playlist">
+    <br><br><br><br><br><br>
     <h3>Comentarios dos clientes</h3>
     <table>
         <thead>
@@ -186,9 +187,15 @@
 
   <footer>
     <hr>
-    <p>Todos os direitos reservados:
-        <a target="_blank" href="">Trabalho do PI</a> &copy;
+    <p>Contatos - Email: rjmcontabil@gmail.com, Tel: (021) 3242-5047
+      <a href="https://www.facebook.com/RJMContabilidadee">
+        <img style="width: 1.5rem; padding: 2.5rem;" src="{{url_for('static', filename='img/logotipo-do-instagram.png')}}" alt="">
+      </a>
+      <a href="https://www.instagram.com/rjmcontabil/">
+        <img style="width: 2.7rem;" src="{{url_for('static', filename='img/Facebook Icon.jpg')}}" alt="">
+      </a>
     </p>
+
   </footer>
 
 </body>

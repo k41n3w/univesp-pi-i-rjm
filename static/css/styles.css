@@ -372,3 +372,18 @@ li {
   line-height: 2.5rem;
   text-transform: unset;
 }
+
+.parent--utils {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.utils {
+  max-width: 250px;
+  height: auto;
+  text-align: center;
+  margin: 10px;
+  font-size: 5.5rem;
+  margin-top: 10rem;
+}

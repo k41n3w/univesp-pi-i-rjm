@@ -1,3 +1,7 @@
+# Para ordar esse projeto aperte cntrl + alt + n
+# Vai aparecer como retorno a url para utilizar!
+# Para desligar os servidor aperte cntrl + c
+
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
